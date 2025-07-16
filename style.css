@@ -1,0 +1,270 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent scrolling */
+    height: 100vh;
+}
+
+header {
+    font-family: 'Tomorrow', sans-serif;
+    background-color: #B15D30;
+    color: #F5DFBB;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid #2C2C54;
+}
+
+#animated-title {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#animated-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-letter 0.5s forwards ease-out;
+}
+
+/* Keyframes for each letter's sliding effect */
+@keyframes slide-in-letter {
+    from {
+        opacity: 0.5;
+        transform: translateX(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav {
+    background-color: #A40E4C;
+    color: #F5DFBB;
+    font-family: 'Tomorrow', sans-serif;
+    margin: 0 0px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center; /* Align icons vertically within their row */
+    width: 100%; /* Take full width of text-section */
+    padding-top: 1px; /* Adds space between text and icons */
+    background-color: transparent; /* Light background for the row */
+    margin-top: -150px;
+}
+
+.icon {
+    width: 80px;
+    height: auto; 
+    margin: 0 15px; /* Spacing between icons */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #A40E4C; /* #562C2C */
+    color: #F5DFBB;
+    padding: 0px 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    line-height: 10px; /* Adjust line height to match container's height */
+    height: 40px;
+}
+
+.scrolling-text span {
+    display: inline-block;
+    position: absolute;
+    will-change: transform;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(60%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    padding: 0px;
+}
+
+.button {
+    display: inline-block;  /* Allows padding and other properties */
+    padding: 10px 20px;     /* Adjust the inside spacing */
+    margin: 15px;           /* Space between buttons */
+    font-size: 16px;       /* Text size */
+    color: #F5DFBB;          /* Text color */
+    background-color: #B15D30; /* Button color */
+    
+    
+    text-align: center;    /* Center the text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;    /* Rounded corners */
+    border: none;          /* Remove default border */
+    transition: background-color 0.5s; /* Smooth transition for hover effect */
+    cursor: pointer;       /* Cursor change on hover */
+
+    animation: slide-in 3s ease-out forwards;
+}
+
+.button:hover {
+    background-color: #a2361c; /* Darker shade on hover */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-500%); /* Start off-screen to the left */
+        opacity: 0.5; /* Initially invisible */
+    }
+    to {
+        transform: translateX(0); /* Slide into position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0px;
+    color: #F5DFBB;
+    background-color: #2C6E49;
+    border: 2px solid #2C2C54;
+}
+
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0px;
+    color: #F5DFBB;
+    background-color: #49a861;
+    border: 2px solid #2C2C54;
+}
+
+.text-section {
+    flex: 1;
+    margin-right: 20px;
+    margin-left:30px;
+    min-width: 200px;
+}
+
+.image-section {
+    flex: 1;
+    min-width: 200px;
+    max-width: 50%;
+    
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    /*border-radius: 10px;
+    border: 2px solid #007BFF;t*/
+}
+
+footer {
+    border-radius: 0px;
+    color: #F5DFBB;
+    background-color: #2C6E49;
+    border: 5px solid #2C2C54;
+
+}
+
+/* Floating Shapes */
+.floating-shape {
+    position: absolute;
+    border-radius: 30%; /* Less roundness */
+    opacity: 0.2;
+    animation: float-infinite 100s linear infinite;
+    pointer-events: none;
+}
+
+.shape1 {
+    width: 2000px; /* Increased size */
+    height: 1500px;
+    background-color: rgba(255, 105, 180, 0.6);
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.shape2 {
+    width: 2500px;
+    height: 2000px;
+    background-color: rgba(30, 144, 255, 0.6);
+    top: 50%;
+    left: 70%;
+    animation-delay: 0.5s;
+}
+
+.shape3 {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(50, 205, 50, 0.6);
+    top: 110%;
+    left: -50%;
+    animation-delay: 1s;
+}
+.shape4 {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(50, 205, 50, 0.6);
+    top: -30%;
+    left: -30%;
+    animation-delay: 0.2s;
+}
+
+/* Keyframes for Infinite Floating and Spinning Effect */
+@keyframes float-infinite {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-200px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.35;
+    background-color: transparent; /* Makes the center of the circle transparent */
+    border-radius: 50%; /* Keeps the shape circular */
+    /*border: 2px solid rgba(17, 223, 181, 0.7);*/
+    border: 2px solid hsl(123, 72%, 47%);
+
+    border-radius: 50%;
+    pointer-events: none; /* Ensure clicks pass through */
+    z-index: 100; /* Draw over content */
+}
