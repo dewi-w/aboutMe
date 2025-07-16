@@ -199,7 +199,7 @@ footer {
 
 /* Floating Shapes */
 .floating-shape {
-    max-height: 100vh;
+    max-height: 80vh;
     position: absolute;
     border-radius: 30%; /* Less roundness */
     opacity: 0.2;
