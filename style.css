@@ -220,7 +220,7 @@ footer {
     width: 2500px;
     height: 2000px;
     background-color: rgba(30, 144, 255, 0.6);
-    top: 50%;
+    top: 40%;
     left: 70%;
     animation-delay: 0.5s;
 }
@@ -229,7 +229,7 @@ footer {
     width: 1000px;
     height: 1000px;
     background-color: rgba(50, 205, 50, 0.6);
-    top: 110%;
+    top: 60%;
     left: -50%;
     animation-delay: 1s;
 }
