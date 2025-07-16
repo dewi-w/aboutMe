@@ -199,7 +199,8 @@ footer {
 
 /* Floating Shapes */
 .floating-shape {
-    max-height: 80vh;
+    max-height: 60vh;
+    overflow: hidden;
     position: absolute;
     border-radius: 30%; /* Less roundness */
     opacity: 0.2;
@@ -227,14 +228,14 @@ footer {
 
 .shape3 {
     width: 1000px;
-    height: 1000px;
-    background-color: rgba(50, 205, 50, 0.6);
-    top: 60%;
+    height: 2000px;
+    background-color: rgba(141, 202, 43, 0.6);
+    top: 30%;
     left: -50%;
     animation-delay: 1s;
 }
 .shape4 {
-    width: 1000px;
+    width: 1500px;
     height: 1000px;
     background-color: rgba(50, 205, 50, 0.6);
     top: -30%;
