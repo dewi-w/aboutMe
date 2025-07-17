@@ -1,10 +1,14 @@
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden; /* Prevent scrolling */
     height: 100vh;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 header {
@@ -59,9 +63,10 @@ nav {
     justify-content: flex-end; /* Align icons to the right */
     align-items: center; /* Align icons vertically within their row */
     width: 100%; /* Take full width of text-section */
-    padding-top: 1px; /* Adds space between text and icons */
+    padding-top: 60px; /* Adds space between text and icons */
     background-color: transparent; /* Light background for the row */
     margin-top: -150px;
+    margin-bottom: 1px;
 }
 
 .icon {
