@@ -99,7 +99,7 @@ nav {
     display: inline-block;
     position: absolute;
     will-change: transform;
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 @keyframes scroll {
