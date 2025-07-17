@@ -94,5 +94,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start the animation
     requestAnimationFrame(animate);
+
+    const links = document.querySelectorAll('.button');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+
+            // Scroll to the target element smoothly
+            window.scroll({
+                top: targetElement.offsetTop,
+                behavior: 'smooth' // Enable smooth scrolling
+            });
+        });
+    });
 });
 
