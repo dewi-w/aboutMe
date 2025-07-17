@@ -225,8 +225,8 @@ footer {
 }
 
 .shape1 {
-    width: 2000px; /* Increased size */
-    height: 1500px;
+    width: 110vw; /* Increased size */
+    height: 130vh;
     background-color: rgba(255, 105, 180, 0.6);
     top: 10%;
     left: 20%;
@@ -234,8 +234,8 @@ footer {
 }
 
 .shape2 {
-    width: 2500px;
-    height: 2000px;
+    width: 120vw;
+    height: 140vh;
     background-color: rgba(30, 144, 255, 0.6);
     top: 40%;
     left: 70%;
@@ -243,16 +243,16 @@ footer {
 }
 
 .shape3 {
-    width: 1000px;
-    height: 2000px;
+    width: 60vw;
+    height: 130vh;
     background-color: rgba(141, 202, 43, 0.6);
     top: 30%;
     left: -50%;
     animation-delay: 1s;
 }
 .shape4 {
-    width: 1500px;
-    height: 1000px;
+    width: 70vw;
+    height: 150vh;
     background-color: rgba(50, 205, 50, 0.6);
     top: -30%;
     left: -30%;
