@@ -86,7 +86,7 @@ nav {
     white-space: nowrap;
     background-color: #A40E4C; /* #562C2C */
     color: #F5DFBB;
-    padding: 0px 0;
+    padding: 5vh 0;
     position: relative;
     width: 100%;
     box-sizing: border-box;
@@ -281,7 +281,6 @@ footer {
     border-radius: 50%; /* Keeps the shape circular */
     /*border: 2px solid rgba(17, 223, 181, 0.7);*/
     border: 2px solid hsl(123, 72%, 47%);
-
     border-radius: 50%;
     pointer-events: none; /* Ensure clicks pass through */
     z-index: 100; /* Draw over content */
